@@ -1,3 +1,0 @@
-<goal>
-HappyPet is a web application focused on tracking a cat’s health, with a strong emphasis on feline diabetes management, providing a single, user-friendly page that displays all essential information at a glance: the cat’s profile (identity, age, weight, characteristics), a precise and time-stamped history of insulin injections, the time of the last and next injection, and clear charts to monitor weight and food intake over time; the goal is to offer a simple, reassuring, and intuitive interface designed for daily use, helping owners avoid missed doses, ensure safe care, and maintain reliable long-term health tracking.
-</goal>
