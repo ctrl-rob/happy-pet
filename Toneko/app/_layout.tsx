@@ -4,8 +4,8 @@ import { StatusBar } from "react-native";
 export default function RootLayout() {
   return (
     <>
-      <StatusBar style="auto" hidden={true} />
-      <Stack />
+      <StatusBar hidden={true} />
+      <Stack screenOptions={{ headerShown: false }} />
     </>
   )
 }

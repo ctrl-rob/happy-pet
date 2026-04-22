@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { SafeAreaProvider, useSafeAreaInsets } from "react-native-safe-area-context";
 import { useState } from "react";
 
@@ -18,18 +18,16 @@ const Home = () => {
 
   return (
     <View
-      style={{
-        flex: 1,
-        paddingTop: insets.top,
-        alignItems: "center",
-      }}
+      style={styles.container}
     >
-      <Text style={{ fontSize: 18, fontWeight: "bold" }}>
+      <Text style={styles.title}>
         Toneko - Cat Companion
       </Text>
 
-      <Injection unitInsuline={unitInsuline}
-        decreaseUnit={decreaseUnit} increaseUnit={increaseUnit} />
+      <View style={styles.injectionBlock}>
+        <Injection unitInsuline={unitInsuline}
+          decreaseUnit={decreaseUnit} increaseUnit={increaseUnit} />
+      </View>
     </View >
   );
 }
@@ -40,3 +38,19 @@ export default function App() {
       <Home />
     </SafeAreaProvider>)
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  title: {
+    fontSize: 18,
+    fontWeight: "bold",
+  },
+  injectionBlock: {
+    marginBottom: 20
+  }
+});
