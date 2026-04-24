@@ -1,4 +1,4 @@
-import {TextInput, StyleSheet, Pressable, Text, View } from "react-native";
+import { TextInput, StyleSheet, Pressable, View } from "react-native";
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
 
@@ -29,9 +29,8 @@ const styles = StyleSheet.create({
         textAlign: "center",
         borderWidth: 2,
         marginHorizontal: 4,
-        borderRadius: "10px",
-        lineHeight: "1.5rem",
-        
+        borderRadius: 10,
+        lineHeight: 24,
     }
 })
 
